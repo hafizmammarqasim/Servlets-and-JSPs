@@ -21,11 +21,37 @@
             font-family: 'Poppins', sans-serif;
             background-color: var(--background-color);
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            flex-direction: column; /* Stack navbar and content vertically */
+            min-height: 100vh;
             margin: 0;
             color: var(--text-color);
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 100%;
+            box-sizing: border-box; /* Ensures padding doesn't cause scrollbar */
+        }
+
+        .navbar h2 {
+            margin: 0;
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+
+        /* Content Wrapper to center the card */
+        .content-wrapper {
+            flex: 1; /* Takes up remaining height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         .card {
@@ -38,10 +64,11 @@
             text-align: center;
         }
 
-        h2 {
+        h2.form-title {
             color: var(--primary-color);
             margin-bottom: 20px;
             font-weight: 600;
+            margin-top: 0;
         }
 
         form {
@@ -124,37 +151,45 @@
     </style>
 </head>
 <body>
-    <div class="card">
-        <h2>Welcome Back</h2>
+    <!-- Navbar added here -->
+    <div class="navbar">
+        <h2>SpendSmart 💸</h2>
+    </div>
 
-        <!-- Display messages area -->
-        <div class="message-box">
-            <%
-                String msg = request.getParameter("msg");
-                if("registered".equals(msg)) {
-                    out.print("<p class='success'>Registration Successful! Please Login.</p>");
-                } else if("invalid".equals(msg)) {
-                    out.print("<p class='error'>Invalid Email or Password.</p>");
-                } else if("logout".equals(msg)) {
-                    out.print("<p class='success'>Logout Successful.</p>");
-                }
-            %>
-        </div>
+    <!-- Wrapper to center the card in the remaining space -->
+    <div class="content-wrapper">
+        <div class="card">
+            <h2 class="form-title">Welcome Back</h2>
 
-        <form action="auth" method="post">
-            <input type="hidden" name="action" value="login">
+            <!-- Display messages area -->
+            <div class="message-box">
+                <%
+                    String msg = request.getParameter("msg");
+                    if("registered".equals(msg)) {
+                        out.print("<p class='success'>Registration Successful! Please Login.</p>");
+                    } else if("invalid".equals(msg)) {
+                        out.print("<p class='error'>Invalid Email or Password.</p>");
+                    } else if("logout".equals(msg)) {
+                        out.print("<p class='success'>Logout Successful.</p>");
+                    }
+                %>
+            </div>
 
-            <label>Username</label>
-            <input type="text" name="userName" required>
+            <form action="auth" method="post">
+                <input type="hidden" name="action" value="login">
 
-            <label>Password</label>
-            <input type="password" name="password" required>
+                <label>Username</label>
+                <input type="text" name="userName" required>
 
-            <button type="submit">Login</button>
-        </form>
+                <label>Password</label>
+                <input type="password" name="password" required>
 
-        <div class="link-container">
-            <a href="register.jsp">Create New Account</a>
+                <button type="submit">Login</button>
+            </form>
+
+            <div class="link-container">
+                <a href="register.jsp">Create New Account</a>
+            </div>
         </div>
     </div>
 </body>

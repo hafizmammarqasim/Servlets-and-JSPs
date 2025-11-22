@@ -2,6 +2,8 @@ package com.ammar.expenseManagerDemo.dao;
 
 import com.ammar.expenseManagerDemo.model.Category;
 import com.ammar.expenseManagerDemo.util.DBConnection;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -33,5 +35,23 @@ public class CategoryDAO {
             ex.printStackTrace();
         }
         return categories;
+    }
+
+    public boolean addCategory(Category category){
+        try{
+            Connection conn = DBConnection.getConnection();
+            String query = "Insert into Categories(categoryName, userId) values(?,?)";
+            PreparedStatement ps = conn.prepareStatement(query);
+            ps.setString(1,category.getCategoryName());
+            ps.setInt(2,category.getUserId());
+            int f = ps.executeUpdate();
+
+            if(f > 0)
+                return true;
+
+        } catch (SQLException ex){
+            ex.printStackTrace();
+        }
+        return false;
     }
 }

@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dc4af59-d06d-4feb-88a3-d84f26a68b7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ammar/expenseManagerDemo/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ammar/expenseManagerDemo/dao/CategoryDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ammar/expenseManagerDemo/dao/ExpenseDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ammar/expenseManagerDemo/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ammar/expenseManagerDemo/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ammar/expenseManagerDemo/model/Expense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ammar/expenseManagerDemo/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ammar/expenseManagerDemo/util/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ammar/expenseManagerDemo/web/AuthServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ammar/expenseManagerDemo/web/ExpenseServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dashboard.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ammar/expenseManagerDemo/web/CategoryServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/addExpense.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ammar/expenseManagerDemo/dao/CategoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ammar/expenseManagerDemo/dao/CategoryDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ammar/expenseManagerDemo/dao/ExpenseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ammar/expenseManagerDemo/dao/ExpenseDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dashboard.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;hafizmammarqasim&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hafizmammarqasim/Servlets-and-JSPs.git&quot;,
+    &quot;accountId&quot;: &quot;ca7094eb-fc14-470c-8b7f-6d373c6db22e&quot;
+  }
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -57,19 +55,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Smart Tomcat.MyTomcat.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/BS SE/Projects/ExpenseManagerDemo/src/main/webapp&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/BS SE/Projects/ExpenseManagerDemo/src/main/java/com/ammar/expenseManagerDemo/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Smart Tomcat.MyTomcat.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/BS SE/Projects/ExpenseManagerDemo/src/main/webapp",
+    "onboarding.tips.debug.path": "D:/BS SE/Projects/ExpenseManagerDemo/src/main/java/com/ammar/expenseManagerDemo/Main.java",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\BS SE\Projects\ExpenseManagerDemo\src\main\webapp" />

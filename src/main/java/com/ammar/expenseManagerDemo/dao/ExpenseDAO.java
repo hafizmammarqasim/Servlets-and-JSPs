@@ -18,7 +18,7 @@ public class ExpenseDAO {
             Connection conn = DBConnection.getConnection();
             String query = "Select e.*, c.categoryName from expenses e " +
                     "join categories c on e.categoryId = c.categoryId " +
-                    "where e.userId=?";
+                    "where e.userId=? order by e.entryDate";
 
             PreparedStatement ps = conn.prepareStatement(query);
             ps.setInt(1,userId);
